@@ -246,3 +246,15 @@ brew install --cask postman
 ```shell
 brew install --cask surfshark
 ```
+
+### Install AWS CLI
+
+```shell
+brew install awscli
+```
+
+Login to cli it will require the `access key` and the `secret access key`
+
+```shell
+aws configure
+```
