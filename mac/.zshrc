@@ -21,11 +21,16 @@ ENABLE_CORRECTION="true"
 
 # Plugins
 plugins=(
+    aws
+    docker
 	git
+	you-should-use
+	web-search
+	z
 	zsh-autosuggestions
 	zsh-completions
 	zsh-syntax-highlighting
-	web-search
+	zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
