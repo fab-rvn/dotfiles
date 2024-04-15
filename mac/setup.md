@@ -18,7 +18,7 @@ The setup includes the installation of essential software and customization of t
 - [Install Fonts](#install-fonts)
 - [Install Powerlevel10k](#install-powerline10k)
 - [Install Colorls](#install-colorls)
-- [Setup Vim](#Setup vim)
+- [Setup Vim](#setup-vim)
 - [Install Neovim](#install-neovim)
 - [Install Tmux](#install-tmux)
 - [Install Node](#install-node)
