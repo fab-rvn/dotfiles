@@ -21,8 +21,8 @@ ENABLE_CORRECTION="true"
 
 # Plugins
 plugins=(
-    aws
-    docker
+	aws
+	docker
 	git
 	you-should-use
 	web-search
