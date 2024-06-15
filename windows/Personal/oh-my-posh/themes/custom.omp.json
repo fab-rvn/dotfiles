@@ -6,9 +6,16 @@
       "alignment": "left",
       "segments": [
         {
+          "background": "transparent",
+          "foreground": "#EBDBB2",
+          "style": "plain",
+          "template": "\u256d\u2500",
+          "type": "text"
+        },
+        {
           "background": "#458588",
           "foreground": "#ffffff",
-          "leading_diamond": "\u256d\u2500\ue0b2",
+          "leading_diamond": "\ue0b2",
           "properties": {
             "folder_separator_icon": " \ue0b1 ",
             "home_icon": "~",
@@ -157,8 +164,15 @@
           "invert_powerline": true,
           "style": "diamond",
           "template": " {{ .CurrentDate | date .Format }} \uf017 ",
-          "trailing_diamond": "\ue0b0\u2500\u256e",
+          "trailing_diamond": "\ue0b0",
           "type": "time"
+        },
+        {
+          "background": "transparent",
+          "foreground": "#EBDBB2",
+          "style": "plain",
+          "template": "\u2500\u256e",
+          "type": "text"
         }
       ],
       "type": "prompt"
