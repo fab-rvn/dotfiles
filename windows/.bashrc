@@ -14,6 +14,7 @@ alias ll='ls -la'
 alias lls='ls -la --sort=size'
 alias llt='ls -la --sort=time'
 alias rmd="rm -rf"
+alias s="source .bashrc"
 alias x="exit"
 alias q="quit"
 alias repos="cd RiderProjects"

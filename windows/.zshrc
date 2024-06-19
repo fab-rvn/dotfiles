@@ -37,7 +37,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias clr="clear"
-alias ls="ls -a -F --color=auto --show-control-chars"
+alias ls="colorls -A --sf --sd"
 alias ll="ls -la"
 alias lls='ls -la --sort=size'
 alias llt='ls -la --sort=time'

@@ -49,25 +49,20 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 
 ## Install Z shell (zsh) on Ubuntu WSL
 
-1. Update the package list
+- Update and upgrade packages
 
 ```shell
 sudo apt update
-```
-
-2. Upgrade all installed packages
-
-```shell
 sudo apt upgrade
 ```
 
-3. install Zsh
+- Install Zsh
 
 ```shell
 sudo apt install zsh
 ```
 
-4. Set zsh as your default shell
+- Set zsh as your default shell
 
 ```shell
 chsh -s /bin/zsh
@@ -121,6 +116,44 @@ git clone https://github.com/jeffreytse/zsh-vi-mode \
 ```shell
 git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
 ```
+
+- Install Colorls
+
+```shell
+sudo apt install ruby ruby-dev ruby-colorize
+sudo apt install build-essential
+sudo apt install libncurses5-dev
+sudo gem install colorls
+```
+
+- Enable tab completion for flags
+
+```shell
+source $(dirname $(gem which colorls))/tab_complete.sh
+```
+
+Check if the ~/.config/colorls directory exists. If it doesn't exist, create it using the following command:
+
+```shell
+mkdir -p ~/.config/colorls
+```
+
+and then
+
+```shell
+cp $(dirname $(gem which colorls))/yaml/dark_colors.yaml ~/.config/colorls/dark_colors.yaml
+```
+
+in the ~/.config/colorls/dark_colors.yaml file, change the colors
+
+```shell
+# Change only main colors
+unrecognized_file: '#a89984' #gold -> gray
+recognized_file:   '#d79921' #yellow
+executable_file:   '#98971a' #lime -> green
+dir:               '#458588' #dodgerblue -> blue
+```
+
 
 ### Install Authy
 
